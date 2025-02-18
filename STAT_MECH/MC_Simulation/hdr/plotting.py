@@ -37,6 +37,8 @@ def update_plot(im, ax1, ax2, ax3, line_energy, line_magnetization, lattice, ene
     ax3.relim()
     ax3.autoscale_view()
 
+    plt.pause(0.0001)
+
 def save_final_plot(fig, path):
     plt.ioff()
     plt.savefig(path)
